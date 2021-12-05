@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BattleShip</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="switch_to_ai">Показать карту противника</string>
+    <string name="switch_to_player">Показать вашу карту</string>
+    <string name="draw_your_field">Расположие свои корабли!</string>
+    <string name="your_turn">Ваш черёд</string>
+    <string name="you_missed">Не попал!</string>
+    <string name="you_hit">Есть пробитие!</string>
+    <string name="you_sunk">Потопили!</string>
+    <string name="you_win">Победа!</string>
+    <string name="you_lose">Лузер!</string>
+    <string name="ai_hit">Противник ранил по %1$s</string>
+    <string name="ai_missed">Противник стреляет в %1$s, не попал!</string>
+    <string name="ai_sunk">Противник топит на %1$s</string>
+    <plurals name="ai_sunk_multiple">
+        <item quantity="one">Противник потопил %d корабль!</item>
+        <item quantity="few">Противник потопил %d корабля!</item>
+        <item quantity="many">Противник потопил %d кораблей!</item>
+        <item quantity="other">Противник потопил %d кораблей!</item>
+    </plurals>
+    <string name="restart">Рестарт</string>
+</resources>
