@@ -32,7 +32,12 @@ public class Controller {
 
     private final ArrayList<View> views = new ArrayList<>();
 
-
+    /**
+     * Class which takes control of 2 battlefields
+     * Checks if ship is destroyed
+     * Checks if cell has adjacent cells
+     * Starts next state
+     */
     public Controller() {
         humanField = new BattleField(SIZE, SIZE);
         aiField = new BattleField(SIZE, SIZE);
@@ -59,6 +64,11 @@ public class Controller {
         return SIZE;
     }
 
+    /**
+     *
+     * @param player Player instance
+     * @return field according to enum Player
+     */
     public BattleField getField(Player player) {
         switch (player) {
             case HUMAN:

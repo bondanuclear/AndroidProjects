@@ -11,6 +11,9 @@ import GameArchitecture.BattleField;
 import GameArchitecture.CellState;
 import GameArchitecture.Player;
 
+/**
+ * Class responsible for painting
+ */
 public class FieldView extends View {
     private static final String LOGGING_TAG = "GameFieldView";
 

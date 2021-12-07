@@ -7,6 +7,9 @@ import GameArchitecture.CellState;
 import GameArchitecture.Player;
 import GameArchitecture.Point;
 
+/**
+ * Class that controls AI
+ */
 public class AIField extends GameState {
     public AIField(Controller controller) {
         super(controller);
@@ -24,6 +27,11 @@ public class AIField extends GameState {
         controller.startNextState();
     }
 
+    /**
+     * Method which
+     * @param size - size of the ship
+     * @param aiField - atrificial intelligence. Battlefield instance
+     */
     public void placeRandomPiece(int size, BattleField aiField) {
         Point[] figurePoints = new Point[size];
 

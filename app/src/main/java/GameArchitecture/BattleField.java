@@ -11,6 +11,11 @@ public class BattleField {
     private final int width;
     private final int height;
 
+    /**
+     * Method which creates battlefield
+     * @param width - width of battle field
+     * @param height - height of battlefield
+     */
     public BattleField(int width, int height) {
         if (width < 10 || height < 10)
             throw new IllegalArgumentException("Field must be at least 10x10");
@@ -61,6 +66,12 @@ public class BattleField {
         return true;
     }
 
+    /**
+     *
+     * @param x - x position
+     * @param y - y position
+     * @return - checks if part of ship is correctly positioned
+     */
     public boolean isValidCellForShip(int x, int y) {
         return isValidCellForShip(x, y, Collections.<Point>emptySet());
     }
@@ -81,6 +92,11 @@ public class BattleField {
         return height;
     }
 
+    /**
+     *
+     * @param o - cell we want to check
+     * @return true if cells are the same
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

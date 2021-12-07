@@ -7,6 +7,10 @@ import GameArchitecture.Player;
 public class GameState {
     private Controller controller;
 
+    /**
+     * Base class
+     * @param controller - Controller class instance
+     */
     public GameState(Controller controller) {
         this.controller = controller;
     }

@@ -26,6 +26,10 @@ public class CreateHumanField extends GameState {
     private final Set<Point> currentShip = new ArraySet<>(4);
     private final Map<Integer, Integer> shipCountBySize = new HashMap<>(4);
 
+    /**
+     * Method which puts ships
+     * @param controller - variable of type controller
+     */
     public CreateHumanField(Controller controller) {
         super(controller);
 
@@ -33,6 +37,11 @@ public class CreateHumanField extends GameState {
             shipCountBySize.put(i, 0);
     }
 
+    /**
+     *
+     * @param size - size of a ship
+     * @return - amount of ships by size
+     */
     private int getShipCount(int size) {
         if (size < 1)
             throw new IllegalArgumentException();
@@ -50,6 +59,12 @@ public class CreateHumanField extends GameState {
         return maxAvailableShipSize;
     }
 
+    /**
+     *
+     * @param x - x position
+     * @param y - y -position
+     * @return
+     */
     private boolean isValidCoordinate(int x, int y) {
         if (x == NOT_DRAWING) {
             if (y == NOT_DRAWING)
@@ -67,6 +82,14 @@ public class CreateHumanField extends GameState {
         return Math.abs(x2 - x1) <= 1 && Math.abs(y2 - y1) <= 1;
     }
 
+    /**
+     *
+     * @param x1 - x pos
+     * @param y1 - y pos
+     * @param x2 - x pos
+     * @param y2 - pos
+     * @return true if two cells are adjacent
+     */
     private boolean isTouching(int x1, int y1, int x2, int y2) {
         if (!isValidCoordinate(x1, y1) || !isValidCoordinate(x2, y2))
             return true;
