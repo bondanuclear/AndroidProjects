@@ -1,2 +1,2 @@
 # BattleShip
- OOP 3 laboratore
+ OOP 3 laboratory
